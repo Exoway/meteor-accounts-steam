@@ -2,13 +2,11 @@
 
 This package provides seamless integration of Meteor accounts system with Steam's OpenID provider.
 
-Tested with **Meteor 1.4.1.2** so far.
-
-Check out [meteor-accounts-steam-example](https://github.com/scholtzm/meteor-accounts-steam-example) for a basic example.
+Tested with **Meteor 1.10.1** so far.
 
 ## Installation
 
-`meteor add scholtzm:accounts-steam`
+`meteor add exoway:accounts-steam`
 
 ## Usage
 
@@ -34,14 +32,6 @@ These options override service configuration stored in the database.
 The value below can be only set via Accounts UI dialog or by inserting the service configuration directly to database:
 
 * `timeout` - timeout value (in milliseconds) for the OpenID handshake
-
-## Accounts UI integration
-
-This package integrates with `accounts-ui` and also provides configuration dialog. The configuration dialog contains field `Timeout`, which can be used to adjust timeout value (in milliseconds) for the OpenID handshake.
-
-You can also skip the config dialog by running a short snippet in your `Meteor.startup` function, see below.
-
-**NOTE:** Always choose redirect-based login flow. This package does not support logging in through popup.
 
 ## Manual configuration setup
 
